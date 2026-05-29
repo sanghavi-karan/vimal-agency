@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif; /* website font */
+}
+
+a{
+    text-decoration: none; /* to remove underline from link */
+}
+body{
+    margin: 0%;
+}
+
+        /* navbar */
+.contact{
+    padding-top: 30px; /* to give some space from above in navbar */
+}
+.logo-main{
+    padding-top: 30px;
+}
+.nav-div{
+    /* padding: 0%; */
+    /* margin: 0%; */
+    height: 70px;
+    width: 100%;
+    background-color: #1b2e3f;
+    position: sticky; /* to stick navbar at top */
+}
+#logo{
+    margin-left: 15px;
+    /* margin-top: 50px; */
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+#logo span{
+    color: #ffc800;
+}
+#logo #span1{
+    font-size: 30px;
+}
+.nav-list{
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-link{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large;
+    float: right; /* to float all navbar link to right side */
+    padding: 10px;
+    margin-top: -25px;
+    list-style-type: none; /* remove list type  */
+}
+.nav-link:hover{
+    transform: translateY(-5px);
+}
+
+.nav-link a:hover{
+    color: #ffc800;
+}
+
+.dropbtn:hover{
+    color: #ffc800;
+}
+.nav-link a{
+    color: white;
+}
+
+.dropdown {
+    position: relative; /* Positioning for the dropdown */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropbtn {
+    background: none;
+    color: white; /* Button text color */
+    font-size: x-large; /* Font size */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioning */
+    background-color: #052952; /* Dropdown background color */
+    min-width: 200px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+    z-index: 1; /* Layering */
+}
+
+.dropdown-content a {
+    color: white; /* Text color */
+    padding: 12px 16px; /* Element padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display */
+}
+
+.dropdown-content a:hover {
+    background-color: #0b46a5; /*Hover background color */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Display on hover */
+}
+
+.best-product{
+    background-color: #052952;
+    font-family: cursive;
+    height: 80px;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+}
+
+/* home content */
+.home{
+    width: 100%;
+    height: 90vh; /* for full size of home content */
+    display: flex; /* for responsive */
+    align-items: center; /* align every item center */
+    justify-content: center; /* align every content center */
+    flex-wrap: wrap;
+    background-color: #6969692b;
+    padding-bottom: 40px;
+}
+.home .img {
+    /* margin-top: 80px; */
+    flex: 1;
+    text-align: center;
+}
+.home .img img{
+    margin-top: 30px;
+    width: 90%;
+}
+
+.home .content {
+    flex: 1;
+    padding: 20px;
+}
+.home p {
+    font-size: 1rem; /* boldnessof the font */
+    margin-bottom: 20px;
+}
+.content h1{
+    color: #1b2e3f;
+    font-weight: bold;
+    margin-left: 23px;
+    font-size: 55px;
+    text-shadow: -1px 1px 1px black;
+}
+.content h1 span{
+    color: #1b2e3f;
+    text-shadow: 1px 1px 1px black;
+}
+#span2{
+    color: #ffc800;
+}
+.content p{
+    margin-left: 23px;
+}
+.btn{
+    margin-left: 13px;
+}
+.btn button{
+    width: 150px;
+    height: 32px;
+    letter-spacing: 3px; /* space between letter */
+    background-color: #1b2e3f;
+    color: white;
+    border-radius: 5px;
+    border: none; /* no border */
+    transition: 0.5s ease; /* time for effect */
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #ffc800;
+    color: black;
+    border: none;
+}
+
+            /* offer */
+#offer{
+    background-color: #6969692b;
+    padding-top: 80px;
+}
+#offer i{
+    font-size: 32px;
+    color: black;
+}
+.offer-tb{
+    width: 100%;
+    text-align: center;
+}
+.offer-tb td{
+    width: 25%;
+    text-align: center;
+    vertical-align: middle; /* aligns itens vertically center */
+    padding-bottom: 70px;
+}
+
+.offer-tb i {
+    font-size: 2rem; /* boldnessof the font */
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.offer-tb h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.offer-tb p {
+    font-size: 1rem;
+    color: #555;
+}
+
+            /* footer */
+#footer{
+    color: white;
+    font-size: 14px;
+    background-color: #1b2e3f;
+    padding: 20px;
+}
+#footer .footer-top .footer-tb tr td{
+    width: 33.33%; /* to devide footer in 3(three) parts 50%=2 part 25%=4 part */
+
+}
+#footer .footer-top{
+    padding: 60px 0 30px 0;
+    color: white;
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3{
+    color: #ffc800;
+}
+#footer .footer-top .footer-contact h4{
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+}
+#footer .footer-top .footer-contact p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    color: white;
+}
+#footer .footer-top h4{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative; /* to make it responsive */
+    padding-bottom: 12px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+#footer .footer-top .footer-links h4{
+    color: #ffc800;
+}
+#footer .footer-top .footer-links ul{
+    list-style: none; /* to cancle out list type like square circle etc... */
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+#footer .footer-top .footer-links ul li a{
+    text-decoration: none; /* removes undetrline of footer links */
+    color: white;
+    display: inline-block; /* displays links in one line */
+    line-height: 1;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#footer .footer-top .footer-links ul li a:hover{
+    color: #ffc800;
+}
+#footer .footer-top .socail-links a{
+    font-size: 18px;
+    display: inline-block; /* displays footer icons in one single line */
+    text-decoration: none;
+    background-color: #373737;
+    color: white;
+    line-height: 1; /* to maintain circle shape */
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    transition: 0.5s ease; /* time for transition effect */
+}
+#footer .footer-top .socail-links a:hover{
+    background-color: #ffc800;
+    color: white;
+}
+                            /* products */
+            /* products */
+.products-head{
+    background-color: #3e6882;
+    height: 80px;
+    width: 100%;
+    color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+}
+.product-td{
+    width: 25%;
+}
+
+.card{
+    text-align: center;
+    margin-top: 30px;
+    margin: 20px;
+    background-color: #a4bdcf;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    /* padding: 10px; */
+}
+.card-img{
+    padding: 20px;
+    height: 270px;
+    width: 201px;
+}
+
+.choco-card-img{
+    height: 270px;
+}
+
+.choco-card-img{
+    padding: 20px;
+    height: 150px;
+    width: 800px;
+}
+
+.star i{
+    margin-left: 5px;
+    font-size: 13px;
+}
+.checked{
+    color: #ffc800;
+}
+.product-table{
+    width: 100%;
+    background-color: #6969692b;
+}
+html{
+    scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+                /* about us */
+.about-div{
+    background-color: #6969692b;
+    padding: 60px;
+    text-align: justify;
+    font-size: xx-large;
+    font-weight: bolder; /* to provide boldness to font */
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-div-2{
+    background-color: #6969692b;
+    display: flex;
+    justify-content: center; /* Aligns the table horizontally */
+    align-items: center; /* Aligns the table vertically (if needed) */
+    flex-direction: column; /* Ensures elements stack vertically if there are other elements */
+    padding: 20px;
+}
+.about-hr{
+    height: 5px;
+    background-color: #1b2e3f;
+}
+.about-tb-h{
+    text-align: center;
+    padding: 30px;
+    font-size: xx-large;
+    text-decoration: overline; /* to drow line above the text or paragraph */
+}
+.about-tb{
+    border: 1px solid rgb(0, 0, 0);
+    border-left: none;
+    border-right: none;
+    /* margin-left: 480px; */
+    border-collapse: collapse; /* Merges table borders for a cleaner look */
+    margin: 0 auto; /* Centers the table horizontally */
+    width: auto; /* Adjusts to the table's content */
+    text-align: left; /* Keeps text aligned for readability */
+    font-size: large;
+}
+.about-tb-th{
+    padding: 10px; /* Adds spacing inside table cells */
+    text-align: left; /* Aligns text to the left for better readability */
+}
+.about-dash{
+    border-left: none;
+    border-right: none;
+}
+.about-branch{
+    text-align: center;
+    padding: 20px;
+}
+.about-branch-p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    text-align: center;
+}
+
+                /* contact-us */
+
+.contact-body{
+    background-color: #6969692b;
+}
+.contact-main{
+    width: 50%;
+    display: inline;
+}
+.contact-sub{
+    background-color: #ffffff;
+    height: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.801) 0px 7px 29px 0px;
+    text-align: center;
+}
+.contact-h6{
+    font-size: 30px;
+}
+.contact-p{
+    font-size: 20px;
+}
+.contact-tb{
+    width: 100%;
+}
+.contact-tb-td{
+    padding: 20px;
+}
+.contact-input{
+    /* text-align: center; */
+    height: 40px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.801) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.contact-textarea{
+    /* text-align: center; */
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.801) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.contact-submit{
+    text-align: center;
+    height: 40px;
+    width: 130px;
+    background-color: #052952;
+    color: #ffffff;
+    cursor: pointer; /* it changes the cursor type */
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 60px;
+}
+.contact-submit:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.contact-submit-td{
+    text-align: center;
+    padding: 30px;
+}
